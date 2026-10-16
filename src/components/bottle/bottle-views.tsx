@@ -114,7 +114,7 @@ function ScrollBreakdown({ targetId }: { targetId: string }) {
     if (el) {
       const rect = el.getBoundingClientRect();
       const vh = window.innerHeight;
-      const raw = (vh * 0.7 - rect.top) / Math.max(1, Math.min(rect.height, vh) * 0.8);
+      const raw = (vh * 0.3 - rect.top) / Math.max(1, rect.height * 0.55);
       const target = THREE.MathUtils.clamp(raw, 0, 1);
       progress.current = reduced
         ? target
