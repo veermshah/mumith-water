@@ -10,7 +10,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[680px] bg-[radial-gradient(60%_50%_at_70%_40%,color-mix(in_oklch,var(--water)_18%,transparent),transparent_70%),radial-gradient(50%_40%_at_20%_20%,color-mix(in_oklch,var(--primary)_12%,transparent),transparent_70%)]"
       />
       <div className="mx-auto grid max-w-6xl items-center gap-6 md:grid-cols-[1.1fr_1fr] md:gap-10">
-        <div className="animate-in fade-in slide-in-from-bottom-4 duration-700">
+        <div>
           <p className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-3 py-1 text-sm font-medium text-muted-foreground shadow-soft">
             <span className="size-2 rounded-full bg-water" aria-hidden />
             Pre-launch idea · no product yet

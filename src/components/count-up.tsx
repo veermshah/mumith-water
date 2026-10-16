@@ -26,7 +26,8 @@ export function CountUp({ to, decimals = 0, prefix = "", suffix = "", fallback }
   }, [inView, reduced, to, decimals, prefix, suffix]);
 
   return (
-    <span ref={ref} aria-label={fallback}>
+    <span ref={ref}>
+      <span className="sr-only">{fallback}</span>
       <span aria-hidden>{text ?? fallback}</span>
     </span>
   );
